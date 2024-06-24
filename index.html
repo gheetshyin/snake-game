@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Press Start 2P', cursive;
+        }
+        /* Basic styling for the canvas */
+        #gameCanvas {
+            border: 1px solid black;
+            display: block;
+            margin: 20px auto;
+            background-color: #000;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Add shadow for depth */
+        }
+        /* Styling for the score display */
+        .score {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div class="score">Score: 0</div>
+    <!-- Include the JavaScript file -->
+    <script src="snake.js"></script>
+</body>
+</html>
